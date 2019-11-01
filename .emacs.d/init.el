@@ -171,12 +171,12 @@
 ;; yaml-mode
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-(setq load-path (append '("~/.emacs.d/lisp/yaml-mode") load-path))
-(require 'yaml-mode)
-(set-default 'auto-mode-alist
-             (append '(("\\.yml$" . yaml-mode)
-                       ("\\.yaml$" . yaml-mode))
-                     auto-mode-alist))
+;; (setq load-path (append '("~/.emacs.d/lisp/yaml-mode") load-path))
+;; (require 'yaml-mode)
+;; (set-default 'auto-mode-alist
+;;              (append '(("\\.yml$" . yaml-mode)
+;;                        ("\\.yaml$" . yaml-mode))
+;;                      auto-mode-alist))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; ruby
@@ -206,14 +206,14 @@ and source-file directory for your debugger." t)
 ;; Lisp Box
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-(setq slime-net-coding-system 'utf-8-unix)
-(add-to-list 'load-path "~/.emacs.d/lisp/slime")
-(setq inferior-lisp-program "/usr/local/bin/clisp -modern")
+;(setq slime-net-coding-system 'utf-8-unix)
+;(add-to-list 'load-path "~/.emacs.d/lisp/slime")
+;(setq inferior-lisp-program "/usr/local/bin/clisp -modern")
 ;(setq inferior-lisp-program "/Users/kioto/src/ccl/dx86cl64")
 ;(setq inferior-lisp-program "/usr/local/bin/sbcl")
 
-(require 'slime)
-(slime-setup '(slime-repl slime-fancy slime-banner))
+;(require 'slime)
+;(slime-setup '(slime-repl slime-fancy slime-banner))
 
 ;(add-to-list 'load-path "~/.emacs.d/lisp/ac-slime")
 ;(require 'ac-slime)
@@ -226,8 +226,8 @@ and source-file directory for your debugger." t)
 ;; EasyPG
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-(require 'epa-file)
-(epa-file-enable)
+;(require 'epa-file)
+;(epa-file-enable)
 
 ;(mc-setversion "gpg")
 ;(setq mc-gpg-user-id "kioto.hirahara@gmail.com")
