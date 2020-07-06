@@ -10,3 +10,6 @@ git config --global credential.helper store
 # lessで画面クリアしない
 git config --global core.pager "less -R -F -X"
 
+# pullの時はデフォルトでrebase
+git config pull.rebase true
+
