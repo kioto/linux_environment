@@ -346,6 +346,20 @@ and source-file directory for your debugger." t)
 ;;  )
 ;; (autoload 'markdown-preview-mode "markdown-preview-mode.el" t)
 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; elpy
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;;; install
+;;; $ pip install rope flake8 importmagic autopep8 yapf black
+
+;; (package-initialize)
+;; (elpy-enable)
+;; (setq elpy-rpc-virtualenv-path 'current)
+;; (setq elpy-rpc-python-command "python3")
+;; (setq python-shell-interpreter "python3")
+;; (setq python-shell-completion-native-disabled-interpreters '("python"))
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; このファイルに間違いがあった場合に全てを無効にします
 (put 'upcase-region 'disabled nil)
